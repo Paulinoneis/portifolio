@@ -7,7 +7,7 @@ Head: Contém metadados, links para folhas de estilo (Bootstrap e CSS personaliz
 3. Corpo do Documento
 Tema: O corpo é estilizado com um fundo claro e texto escuro, utilizando classes do Bootstrap para facilitar o design responsivo.
 3.1 Container Principal
-Um <div> centralizado, que contém todo o conteúdo principal do portfólio.
+Um <div> centralizado que contém todo o conteúdo principal do portfólio.
 3.2 Navegação
 Uma barra de navegação (<nav>) com links que levam a diferentes seções da página: "Sobre", "Habilidades técnicas" e "Contato". Utiliza classes do Bootstrap para responsividade.
 3.3 Seção Sobre
@@ -19,7 +19,7 @@ Botões que redirecionam para WhatsApp e Instagram, permitindo contato direto.
 4. Footer
 Um footer que exibe um relógio, atualizado a cada segundo. O horário é obtido por meio de JavaScript, que formata a hora, minutos e segundos.
 5. JavaScript
-Inclui a biblioteca jQuery, Popper.js (necessária para alguns componentes do Bootstrap) e o Bootstrap JS.
+Inclui a biblioteca jQuery e o Bootstrap JS.
 Uma função atualizarRelogio que captura a hora atual e atualiza o conteúdo do elemento com o ID relogio. A função é chamada a cada segundo, garantindo que o horário exibido esteja sempre correto.
 Conclusão
-O portfólio é uma aplicação web simples, porém eficaz, que demonstra as habilidades de Paulino Arno da Silva Neis e oferece um meio de contato. A estrutura é limpa e fácil de navegar, enquanto o relógio no footer adiciona um elemento dinâmico ao site.# portifolio
+O portfólio é uma aplicação web simples, porém eficaz, que demonstra as habilidades de Paulino Arno da Silva Neis e oferece um meio de contato. A estrutura é limpa e fácil de navegar, enquanto o relógio no footer adiciona um elemento dinâmico ao site.
