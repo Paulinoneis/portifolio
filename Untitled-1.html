@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <title>Olá esse é meu portfólio</title>
+</head>
+<body class="bg-light text-dark">
+
+    <div class="container text-center py-5">
+        <h1 class="text-primary">Olá esse é meu portfólio</h1>
+
+        <!-- Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="#servicos">Habilidades técnicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Card com foto -->
+        <div class="card mt-5" id="sobre" style="width: 18rem; margin: auto;">
+            <img src="eu.png" class="card-img-top" alt="Paulino Arno da Silva Neis">
+            <div class="card-body">
+                <h5 class="card-title">Esse sou eu</h5>
+                <p class="card-text">Sou um apaixonado por desenvolvimento web e estou sempre aprendendo novas tecnologias para aprimorar minhas habilidades.</p>
+            </div>
+        </div>
+
+        <!-- Seção de Serviços -->
+        <div class="mt-4" id="servicos">
+            <h5 class="text-primary">Minhas habilidades</h5>
+            <p>Olá! Meu nome é Paulino Arno da Silva Neis, tenho 26 anos e sou um desenvolvedor Front-end Junior. Tenho um forte conhecimento em HTML, CSS e JavaScript, que me capacitam a criar interfaces dinâmicas e responsivas. Além disso, sou certificado em PHP e possuo experiência em jQuery, o que amplia ainda mais minhas habilidades de desenvolvimento.
+
+                Minha formação em UI/UX Design me proporciona uma compreensão profunda da importância de criar experiências de usuário intuitivas e agradáveis. Sou familiarizado com Bootstrap, uma ferramenta que utilizo para agilizar o desenvolvimento de layouts modernos e responsivos. Também tenho experiência com WordPress, o que me permite construir e gerenciar sites de maneira eficaz, e utilizo o GitHub para controle de versão e colaboração em projetos.
+                
+                Por fim, possuo conhecimento básico em inglês, o que me auxilia a me comunicar e a acompanhar as tendências do setor. Estou sempre em busca de novas oportunidades para aprender e crescer na área de desenvolvimento web.</p>
+        </div>
+
+        <!-- Botões centralizados -->
+        <div class="mt-4" id="contato">
+            <a href="https://wa.me/seunumerodetelefone" class="btn btn-success mx-2">WhatsApp</a>
+            <a href="https://www.instagram.com/seuusuario/" class="btn btn-info mx-2">Instagram</a>
+        </div>
+    </div>
+
+    <!-- Footer com relógio -->
+    <footer class="text-center mt-5">
+        <p id="relogio"></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+            document.getElementById('relogio').innerText = `${horas}:${minutos}:${segundos}`;
+        }
+
+        setInterval(atualizarRelogio, 1000);
+        atualizarRelogio(); // Chama uma vez para não esperar 1 segundo para mostrar
+    </script>
+</body>
+</html>

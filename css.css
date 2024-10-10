@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa; /* cor de fundo cinza claro */
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Aumentar o tamanho da fonte dos itens da navegação */
+.nav-link {
+    font-size: 1.25rem; /* tamanho maior */
+}
+
+/* Aumentar o tamanho da fonte das seções "Sobre" e "Serviços" */
+.card-title, #servicos h5 {
+    font-size: 1.5rem; /* tamanho maior */
+}
